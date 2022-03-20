@@ -25,6 +25,7 @@ class OceanBot(commands.Bot, ABC):
         print(f"############################## \n startup completed\n logged in as {self.user}")
         activity = discord.Game(name="/help", type=2)
         await bot.change_presence(status=discord.Status.online, activity=activity)
+        print(intents)
 
 
 intents = discord.Intents.default()

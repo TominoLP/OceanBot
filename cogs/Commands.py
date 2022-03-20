@@ -1,15 +1,13 @@
-import discord
-
-from discord.ext import commands
 from discord.commands import slash_command
+from discord.ext import commands
 
 
 class Commands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @slash_command(guild_ids=[881207955029110855])
-    async def hello(ctx):
+    @slash_command(guild_ids=[955091724689088512])
+    async def hello(self, ctx):
         await ctx.respond("Hello!")
 
 
